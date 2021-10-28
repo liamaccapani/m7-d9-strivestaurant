@@ -1,3 +1,11 @@
+export interface Comment {
+  id: number;
+  rating: number;
+  comment: string;
+  author: string;
+  date: string;
+}
+
 export interface Dish {
   id: number;
   name: string;
@@ -9,10 +17,12 @@ export interface Dish {
   comments: Comment[];
 }
 
-export interface Comment {
-  id: number;
-  rating: number;
-  comment: string;
-  author: string;
-  date: string;
+export interface Reservation {
+  _id: string;
+  name: string;
+  phone: string;
+  numberOfPersons: number;
+  smoking: boolean;
+  dateTime: string;
+  specialRequests: string;
 }
